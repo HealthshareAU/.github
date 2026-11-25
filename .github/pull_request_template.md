@@ -23,5 +23,5 @@
 ## Logging and secrets
 - [ ] No passwords, tokens, API keys, session ids or other credentials are logged, put in error messages or shown on dashboards.
 - [ ] No patient data is logged (names, dates of birth, contact details, addresses, Medicare / DVA / IHI or other health identifiers, booking notes). Log record ids instead.
-- [ ] Any new request or response field that carries personal data or a secret is added to the service's log masking list (e.g. the website's `PiiFields`; the marketplace masker from BK-1209).
-- [ ] No secrets in code, config files or test fixtures. Secrets come from AWS Secrets Manager or the pipeline.
+- [ ] Any new request or response field that carries personal data or a secret is added to the service's log masking list.
+- [ ] No secrets in code, config files or test fixtures. Secrets come from the team's secret store or the pipeline.
